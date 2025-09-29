@@ -99,3 +99,12 @@ h2 { margin:0 0 12px 0; color:#fff; font-size:24px; }
   color:var(--muted);
   line-height:1.6;
 }
+.contact { margin-top:28px; }
+.contact a { color:var(--accent); }
+.footer {
+  margin-top:40px;
+  padding:20px 0;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
