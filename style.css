@@ -60,3 +60,13 @@ h1 { margin:0; font-size:36px; }
   border-radius:8px; font-weight:600;
 }
 .link { margin-left:10px; color:var(--muted); }
+
+.card {
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:18px; border-radius:12px;
+  border:1px solid rgba(255,255,255,0.03);
+  margin-top:28px;
+}
+h2 { margin:0 0 12px 0; color:#fff; font-size:24px; }
+.meta { font-size:14px; color:var(--muted); }
+.text { margin-top:8px; color:var(--muted); line-height:1.5; }
