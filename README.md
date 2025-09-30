@@ -14,16 +14,6 @@ It showcases my projects, experience, and contact details, and is deployed using
 
 ---
 
-## 📂 Project Structure
-portfolio/
-│── index.html # Main HTML file
-│── style.css # Stylesheet
-│── script.js # JavaScript (typing + reveal)
-│── README.md # Documentation (this file)
-
-
----
-
 ## 🚀 Run Locally
 1. Clone the repository:
    ```bash
