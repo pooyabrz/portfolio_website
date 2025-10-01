@@ -19,4 +19,3 @@ It showcases my projects, experience, and contact details, and is deployed using
    ```bash
    git clone https://github.com/pooyabrz/portfolio.git
    cd portfolio
-```
