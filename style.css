@@ -121,3 +121,18 @@ html { scroll-behavior:smooth; }
   transform:none;
 }
 
+@media(max-width:900px) {
+  .hero {
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .hero-photo { margin-top:20px; }
+  .actions { display:flex; flex-direction:column; align-items:center; gap:10px; }
+  .link { margin-left:0; }
+  .skills { justify-content:center; }
+}
+
+@media(max-width:600px) {
+  .grid { grid-template-columns:1fr; }
+  .btn, .link { width:100%; text-align:center; }
+}
