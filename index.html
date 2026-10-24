@@ -1,119 +1,196 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pooya Barazandeh — Portfolio</title>
-  <meta name="description" content="Pooya Barazandeh — Computer Science student, AI dev, full-stack enthusiast. Portfolio and projects." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f7f0" id="theme-color">
+  <title>Pooya Barazandeh | AI Engineer &amp; Computer Science Graduate</title>
+  <meta name="description" content="AI developer and team lead, ranked 1st of 72 in Computer Science at Amirkabir University. Research in federated learning, knowledge tracing, and practical AI systems.">
+  <meta name="author" content="Pooya Barazandeh">
+  <link rel="canonical" href="https://pooyabrz.github.io/portfolio_website/">
+  <link rel="alternate" hreflang="en" href="https://pooyabrz.github.io/portfolio_website/">
+  <link rel="alternate" hreflang="fa" href="https://pooyabrz.github.io/portfolio_website/fa.html">
+  <link rel="alternate" hreflang="x-default" href="https://pooyabrz.github.io/portfolio_website/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Pooya Barazandeh | AI Engineer &amp; Computer Science Graduate">
+  <meta property="og:description" content="AI developer and team lead, ranked 1st of 72 in Computer Science at Amirkabir University. Research in federated learning, knowledge tracing, and practical AI systems.">
+  <meta property="og:url" content="https://pooyabrz.github.io/portfolio_website/">
+  <meta property="og:image" content="https://pooyabrz.github.io/portfolio_website/profile.jpg">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Pooya Barazandeh at the Technology Olympics">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pooya Barazandeh | AI Engineer &amp; Computer Science Graduate">
+  <meta name="twitter:description" content="AI developer and team lead, ranked 1st of 72 in Computer Science at Amirkabir University. Research in federated learning, knowledge tracing, and practical AI systems.">
+  <meta name="twitter:image" content="https://pooyabrz.github.io/portfolio_website/profile.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script src="theme-init.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfilePage", "dateModified": "2026-10-21", "url": "https://pooyabrz.github.io/portfolio_website/", "mainEntity": {"@type": "Person", "name": "Pooya Barazandeh", "alternateName": "پویا برازنده", "url": "https://pooyabrz.github.io/portfolio_website/", "image": "https://pooyabrz.github.io/portfolio_website/profile.jpg", "sameAs": ["https://github.com/pooyabrz"], "jobTitle": "AI Developer & Team Lead", "alumniOf": {"@type": "CollegeOrUniversity", "name": "Amirkabir University of Technology"}, "knowsAbout": ["Artificial intelligence", "Federated learning", "Knowledge tracing", "Computer vision", "Retrieval-augmented generation"]}}</script>
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <div class="logo">PB</div>
-        <div>
-          <div class="name">Pooya Barazandeh</div>
-          <div class="meta">Computer Science — Amirkabir University</div>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="mobile-toggle" aria-label="menu" onclick="toggleNav()">☰</button>
-      </nav>
-    </div>
-    <div id="navmobile" class="container navmobile" aria-hidden="true">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+<body id="top" data-theme-light="Use light theme" data-theme-dark="Use dark theme" data-copied="Email copied" data-copy-failed="Select and copy the email address above." data-results-label="projects shown">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Pooya Barazandeh"><span class="monogram" dir="ltr" aria-hidden="true">pb<span>.</span></span><span class="brand-name">Pooya Barazandeh</span></a>
+      <nav class="site-nav" id="navigation" aria-label="Main navigation"><a href="#projects">Work</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <div class="header-tools"><a class="language-link" href="fa.html" lang="fa" hreflang="fa">فا<span class="sr-only"> — فارسی</span></a><button class="theme-toggle icon-button" type="button" aria-label="Switch color theme" hidden><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg></button><button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false">Menu<span aria-hidden="true">☰</span></button></div>
     </div>
   </header>
-
-<main class="container">
-  <section id="home" class="hero">
-    <div class="card-hero">
-      <h1>Hi — I'm <span class="accent">Pooya Barazandeh</span></h1>
-      <div class="type" id="typing">Computer Science Student</div>
-      <p class="lead">
-        AI developer & full-stack enthusiast. I build research prototypes, full-stack apps, and game projects. GPA: 19.6 — Amirkabir University of Technology
-      </p>
-      <div class="skills">
-        <span class="skill">C++</span>
-        <span class="skill">Python</span>
-        <span class="skill">React</span>
-        <span class="skill">Node.js</span>
-        <span class="skill">OpenCV</span>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span class="signal" aria-hidden="true"></span>AI ENGINEERING / APPLIED RESEARCH</p>
+        <h1 id="hero-title">From a research question<br><em>to a working system.</em></h1>
+        <p class="intro">I&#x27;m Pooya, an AI developer and team lead with a Computer Science background. I work on learning systems, evidence-grounded AI, and the software that brings them into use.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="button secondary" href="CV.pdf" download="Pooya-Barazandeh-CV.pdf">Download CV <span aria-hidden="true">↓</span><span class="sr-only"> (PDF · English)</span></a></div>
+        <a class="hero-github text-link" href="https://github.com/pooyabrz"><span dir="ltr">github.com/pooyabrz</span> <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="actions">
-        <a class="btn" href="#projects">See projects</a>
-        <a class="link" href="https://github.com/pooyabrz/pooyabrz/blob/main/CV.pdf">Download CV (PDF)</a>
+      <div class="hero-profile">
+        <figure class="portrait"><img src="profile.jpg" width="640" height="640" alt="Pooya Barazandeh at the Technology Olympics" fetchpriority="high"><figcaption>At the Technology Olympics</figcaption><span class="portrait-mark" aria-hidden="true">PB / 01</span></figure>
+        <div class="profile-caption"><strong>B.Sc. Computer Science · 2026</strong><span>Amirkabir University of Technology</span></div>
+        <dl class="academic-stats"><div><dt>Class rank</dt><dd>1 / 72</dd></div><div><dt>B.Sc. GPA</dt><dd>19.55 / 20</dd></div></dl>
       </div>
-    </div>
-
-  </section>
-  <section id="about" class="about card reveal">
-  <h2>About Me</h2>
-  <p class="meta">
-    Undergraduate AI Developer — Amirkabir University of Technology.  
-    TA for Data Structures & AI courses, part-time AI dev at Rastanovin Raya.
-  </p>
-  <p class="text">
-    I focus on building machine learning prototypes, computer vision tools, and full-stack applications.  
-    I also develop games (C++/Qt) and bots (Whisper/DeepSeek).
-  </p>
-</section>
-<section id="projects" class="projects reveal">
-  <h2>Selected Projects</h2>
-  <div class="grid">
-    <div class="project card">
-      <h4>Space Invader (C++, Qt)</h4>
-      <p class="meta">Classic arcade game implemented in C++ with Qt.</p>
-      <p><a href="https://github.com/pooyabrz/space-invader" target="_blank">View on GitHub →</a></p>
-    </div>
-
-    <div class="project card">
-      <h4>Brain Teaser Minigames (React / Node)</h4>
-      <p class="meta">Collection of puzzle & logic minigames with leaderboards.</p>
-      <p><a href="https://github.com/pooyabrz/brain-teaser-minigames" target="_blank">View on GitHub →</a></p>
-    </div>
-
-    <div class="project card">
-      <h4>YouTube Summarizer (Telegram bot)</h4>
-      <p class="meta">Transcribes videos using Whisper and summarizes with DeepSeek.</p>
-      <p><a href="https://github.com/pooyabrz/YT-Summarizer" target="_blank">View on GitHub →</a></p>
-    </div>
-  </div>
-</section>
-<section id="experience" class="experience card reveal">
-  <h2>Experience & Education</h2>
-  <p class="meta">Undergraduate — Amirkabir University of Technology (GPA: 19.6)</p>
-  <ul class="exp-list">
-    <li>Undergraduate TA (Data Structures, AI, Basic Programming)</li>
-    <li>AI Developer (part-time) at Rastanovin Raya — ML/AI projects</li>
-    <li>Previous projects: RAG system, exam paper segmentation, ASR bot</li>
-  </ul>
-</section>
-<section id="contact" class="contact card reveal">
-  <h2>Contact</h2>
-  <p class="meta">Email: <a href="mailto:Barazandehpooya@gmail.com">Barazandehpooya@gmail.com</a></p>
-  <p class="meta">GitHub: <a href="https://github.com/pooyabrz" target="_blank">github.com/pooyabrz</a></p>
-</section>
-
-<footer class="footer">
-  <p class="meta">Built with HTML, CSS, and JS</p>
-</footer>
-
-</main>
-
-
-  <script src="script.js"></script>
+    </section>
+    <div class="container focus-strip"><span class="eyebrow">AREAS I WORK IN</span><ul><li>Federated learning</li><li>LLMs &amp; retrieval</li><li>Computer vision</li><li>Scientific computing</li></ul></div>
+    <section class="section container" id="projects" aria-labelledby="work-title">
+      <div class="section-heading"><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Experiments. Tools. Applications.</h2><p class="section-intro">Recent public projects, alongside a few earlier builds. Each repository documents what works today and what still needs evaluation.</p></div>
+      <div class="project-controls" hidden><div class="filters" role="group" aria-label="Filter projects by area"><button type="button" data-filter="all" aria-pressed="true">All work</button><button type="button" data-filter="ml" aria-pressed="false">AI &amp; machine learning</button><button type="button" data-filter="simulation" aria-pressed="false">Simulation &amp; systems</button><button type="button" data-filter="software" aria-pressed="false">Software &amp; games</button></div><p class="result-count" id="project-count" role="status" aria-live="polite" aria-atomic="true">10 projects shown</p></div>
+      <div class="project-grid"><article class="project featured" data-project data-category="ml" id="project-demandcast">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">RETAIL FORECASTING</span><span class="project-year">2026</span></div>
+        <h3 dir="ltr">DemandCast</h3>
+        <p class="project-summary">Retail forecasting that separates median accuracy, expected sales, and uncertainty instead of hiding the tradeoffs.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">Python</li><li dir="ltr">LightGBM</li><li dir="ltr">Streamlit</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>LightGBM objectives, temporal backtesting, and quantile intervals on 500 M5 item/store series with a 28-day horizon. A separate product-cohort check documents generalization within the same dataset.</p><p class="scope"><strong>Current scope:</strong> A sampled M5 benchmark; no inventory-service or full-leaderboard claim.</p></div></details>
+        <div class="project-bottom"><span class="status">Benchmark &amp; dashboard</span><a class="text-link" href="https://github.com/pooyabrz/demandcast" aria-label="Repository: DemandCast">Repository <span aria-hidden="true">↗</span></a></div>
+      </div><div class="project-facts" aria-label="RETAIL FORECASTING">
+          <div><strong>500</strong><span>item/store series</span></div>
+          <div><strong>28 days</strong><span>forecast horizon</span></div>
+          <span class="fact-source" dir="ltr">M5 / LightGBM</span>
+        </div>
+    </article>
+<article class="project featured" data-project data-category="software" id="project-family-messenger">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">PRIVATE COMMUNICATION</span><span class="project-year">2026</span></div>
+        <h3 dir="ltr">Family Messenger</h3>
+        <p class="project-summary">A self-hosted family messaging stack with private remote access, setup tooling, and an optional Family Hub.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">Python</li><li dir="ltr">Docker</li><li dir="ltr">Matrix</li><li dir="ltr">Node.js</li><li dir="ltr">Tailscale</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>Combines a Matrix homeserver, PostgreSQL, a reverse proxy, and Tailscale through Docker Compose. Optional MatrixRTC calling and a Family Hub add household coordination features.</p><p class="scope"><strong>Current scope:</strong> Uses upstream Matrix/Element components. No prebuilt Android APK is included. Matrix room encryption does not extend to the separate Hub data.</p></div></details>
+        <div class="project-bottom"><span class="status">Self-hosted project</span><a class="text-link" href="https://github.com/pooyabrz/family-messenger" aria-label="Repository: Family Messenger">Repository <span aria-hidden="true">↗</span></a></div>
+      </div><div class="project-facts" aria-label="PRIVATE COMMUNICATION">
+          <div><strong>Matrix</strong><span>messaging layer</span></div>
+          <div><strong>Tailscale</strong><span>private access</span></div>
+          <span class="fact-source" dir="ltr">Docker Compose / PostgreSQL</span>
+        </div>
+    </article>
+<article class="project" data-project data-category="ml" id="project-doculens">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">DOCUMENT INTELLIGENCE</span><span class="project-year">2026</span></div>
+        <h3 dir="ltr">DocuLens</h3>
+        <p class="project-summary">Document Q&amp;A built around inspectable passages, page references, and optional local answer generation.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">Python</li><li dir="ltr">BM25</li><li dir="ltr">Ollama</li><li dir="ltr">Streamlit</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>BM25 retrieves evidence from text PDFs, TXT, and Markdown. Persian normalization and an optional Ollama adapter support source-ID and verbatim-quote validation.</p><p class="scope"><strong>Current scope:</strong> Lexical retrieval and session memory today. Semantic retrieval and persistent storage are future work; quote validation alone does not prove a claim.</p></div></details>
+        <div class="project-bottom"><span class="status">v0.1 prototype</span><a class="text-link" href="https://github.com/pooyabrz/doculens" aria-label="Repository: DocuLens">Repository <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+<article class="project" data-project data-category="simulation" id="project-leakscope">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">WATER NETWORKS</span><span class="project-year">2026</span></div>
+        <h3 dir="ltr">LeakScope</h3>
+        <p class="project-summary">Proposes water-network inspection areas from sparse pressure measurements, with explicit handling of missing data.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">Python</li><li dir="ltr">EPANET</li><li dir="ltr">WNTR</li><li dir="ltr">Streamlit</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>Combines hydraulic signatures, calibration, and sensor planning on the simulated BattLeDIM network. Compares sensor budgets and dropout conditions in a frozen controlled benchmark.</p><p class="scope"><strong>Current scope:</strong> The sparse-sensor performance target is not yet met. Inspection rankings are not calibrated leak probabilities or a validated field detector.</p></div></details>
+        <div class="project-bottom"><span class="status">Research prototype</span><a class="text-link" href="https://github.com/pooyabrz/LeakScope" aria-label="Repository: LeakScope">Repository <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+<article class="project" data-project data-category="simulation" id="project-aquasentinel">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">ADAPTIVE SAMPLING</span><span class="project-year">2026</span></div>
+        <h3 dir="ltr">AquaSentinel</h3>
+        <p class="project-summary">Explores where to sample water quality when only five tests are available each day.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">Python</li><li dir="ltr">Bayesian planning</li><li dir="ltr">WNTR</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>A Bayesian planner, synthetic network, and offline dashboard form the base demo. An optional WNTR/EPANET pipeline explores a second simulation stage.</p><p class="scope"><strong>Current scope:</strong> Synthetic educational scenarios with uncalibrated assumptions; not suitable for drinking-water safety or operational decisions.</p></div></details>
+        <div class="project-bottom"><span class="status">Educational simulation</span><a class="text-link" href="https://github.com/pooyabrz/AquaSentinel" aria-label="Repository: AquaSentinel">Repository <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+<article class="project" data-project data-category="simulation" id="project-nimbryva">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">WATER &amp; ENERGY RESEARCH</span><span class="project-year">2026</span></div>
+        <h3 dir="ltr">Nimbryva</h3>
+        <p class="project-summary">Adaptive facade research for supplemental water collection and solar energy, with a rotating-mechanism demonstrator.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">Python</li><li dir="ltr">Matplotlib</li><li dir="ltr">Simulation</li><li dir="ltr">PPO</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>The current demo models rigid geometry and a proposed buffer-discharge state machine. Earlier thermal, water, PV, and PPO-policy research is preserved separately for replay.</p><p class="scope"><strong>Current scope:</strong> Scripted water inputs do not estimate yield. Earlier results do not validate the revised mechanism or establish a new RL advantage; full-device performance remains unvalidated.</p></div></details>
+        <div class="project-bottom"><span class="status">Concept demonstrator</span><a class="text-link" href="https://github.com/pooyabrz/NIMBRYVA-ADAPTIVE-WATER-ENERGY-FACADE" aria-label="Repository: Nimbryva">Repository <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+<article class="project" data-project data-category="ml" id="project-tom-jerry">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">REINFORCEMENT LEARNING</span><span class="project-year">2025</span></div>
+        <h3 dir="ltr">Tom &amp; Jerry RL</h3>
+        <p class="project-summary">A grid-world pursuit game for exploring Q-learning, exploration, and reward design.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">Python</li><li dir="ltr">Q-learning</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>Train a tabular agent to catch a moving target in a grid with obstacles, then inspect rewards, steps, and exploration behavior.</p><p class="scope"><strong>Current scope:</strong> An educational discrete environment, not a benchmark of general-purpose planning.</p></div></details>
+        <div class="project-bottom"><span class="status">Learning project</span><a class="text-link" href="https://github.com/pooyabrz/Tom-and-Jerry-using-RL" aria-label="Repository: Tom &amp; Jerry RL">Repository <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+<article class="project" data-project data-category="ml" id="project-yt-summarizer">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">SPEECH &amp; LANGUAGE</span><span class="project-year">2025</span></div>
+        <h3 dir="ltr">YouTube Summarizer</h3>
+        <p class="project-summary">A Telegram workflow that turns YouTube audio into a transcript and a concise summary.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">Python</li><li dir="ltr">Whisper</li><li dir="ltr">DeepSeek</li><li dir="ltr">Telegram</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>Whisper handles transcription; a DeepSeek API integration summarizes the text. Audio chunking supports longer videos.</p><p class="scope"><strong>Current scope:</strong> Requires configured services and credentials. Transcription and summary quality depend on the input and models.</p></div></details>
+        <div class="project-bottom"><span class="status">Bot project</span><a class="text-link" href="https://github.com/pooyabrz/YT-Summarizer" aria-label="Repository: YouTube Summarizer">Repository <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+<article class="project" data-project data-category="software" id="project-brain-teaser">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">FULL-STACK DEVELOPMENT</span><span class="project-year">2025</span></div>
+        <h3 dir="ltr">Brain Teaser Minigames</h3>
+        <p class="project-summary">A collection of logic, memory, and puzzle minigames with player accounts and scoreboards.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">React</li><li dir="ltr">Node.js</li><li dir="ltr">PostgreSQL</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>A React frontend and Node.js/Express backend use PostgreSQL for player profiles and scores.</p><p class="scope"><strong>Current scope:</strong> A full-stack portfolio project; see the repository for local setup.</p></div></details>
+        <div class="project-bottom"><span class="status">Web application</span><a class="text-link" href="https://github.com/pooyabrz/brain-teaser-minigames" aria-label="Repository: Brain Teaser Minigames">Repository <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+<article class="project" data-project data-category="software" id="project-space-invader">
+      <div class="project-content">
+        <div class="project-top"><span class="eyebrow">GAME DEVELOPMENT</span><span class="project-year"></span></div>
+        <h3 dir="ltr">Space Invader</h3>
+        <p class="project-summary">A Star Wars-inspired desktop shooter with an X-wing, TIE-fighter waves, destructible barriers, and a scrolling starfield.</p>
+        <ul class="tags" aria-label="Technologies"><li dir="ltr">C++17</li><li dir="ltr">Qt 6</li></ul>
+        <details><summary>Approach &amp; scope</summary><div class="detail-body"><p>An earlier project exploring C++ application structure and game interaction with Qt.</p><p class="scope"><strong>Current scope:</strong> A desktop game project; source and build instructions are available in the repository.</p></div></details>
+        <div class="project-bottom"><span class="status">Earlier work</span><a class="text-link" href="https://github.com/pooyabrz/space-invader" aria-label="Repository: Space Invader">Repository <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article></div>
+    </section>
+    <section class="research-wrap" id="research" aria-labelledby="research-title"><div class="container section">
+      <div class="section-heading"><p class="eyebrow">02 / RESEARCH &amp; LEARNING</p><h2 id="research-title">Questions worth investigating.</h2><p class="section-intro">My research interests connect efficient learning, interpretable models, and educational applications.</p></div>
+      <div class="research-grid"><article class="research-entry"><div class="entry-meta"><span class="status">Submitted manuscript</span><span>Feb 2026 – present</span></div><h3>Communication-efficient vertical federated learning</h3><p>Co-authored a manuscript on gradient-noise-scale-aware adaptive sampling for vertical federated logistic regression. The study covers 950 runs across 10 datasets and 5 seeds.</p><p class="research-note">Submitted for review; not listed as an accepted publication.</p><a class="text-link" href="CV.pdf">Research details in CV <span aria-hidden="true">↗</span></a></article><article class="research-entry"><div class="entry-meta"><span class="status">Bachelor&#x27;s thesis</span><span>Sep 2025 – Jun 2026</span></div><h3>Deep learning for knowledge tracing</h3><p>Studied DKT, AKT, and GKT on ASSISTments and EdNet, including attention mechanisms for interpreting student knowledge states.</p><a class="text-link" href="CV.pdf">Research details in CV <span aria-hidden="true">↗</span></a></article></div>
+      <aside class="learning-note"><span class="learning-symbol" aria-hidden="true">✳</span><div><span class="eyebrow">CONTINUING LEARNING / JUL 2026</span><h3>Oxford Machine Learning School</h3><p>Completed the MLx Representation Learning &amp; Generative AI 2026 programme and its associated assessment.</p></div></aside>
+    </div></section>
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><p class="eyebrow">03 / EXPERIENCE</p><h2 id="experience-title">Building with teams. Teaching by doing.</h2><p class="section-intro">Industry engineering and university teaching have shaped how I turn ideas into usable software.</p></div>
+      <ol class="timeline"><li class="timeline-item"><span class="timeline-date">Sep 2024 – present</span><div><h3>AI Developer &amp; Team Lead</h3><p class="organization">Rastanovin Raya · part-time</p><p>Lead a two-developer team on AI coding features for an enterprise cloud development environment used by 30+ developers. Build LLM assistance, document automation, and retrieval systems for the company&#x27;s education-platform work.</p></div></li>
+<li class="timeline-item"><span class="timeline-date">Jan 2023 – Jul 2026</span><div><h3>Teaching Assistant · 10+ courses</h3><p class="organization">Amirkabir University of Technology</p><p>Head TA for Advanced Artificial Intelligence, a graduate course with 40+ students. Designed 15+ programming assignments and projects and mentored 200+ students across multiple semesters.</p></div></li>
+<li class="timeline-item"><span class="timeline-date">Sep 2025 – Jul 2026</span><div><h3>Teaching Assistant · Operating Systems</h3><p class="organization">University of Tehran</p><p>Supported labs on process management, memory allocation, and file systems; mentored 40+ students on C systems-programming assignments.</p></div></li>
+<li class="timeline-item"><span class="timeline-date">Jul – Sep 2023</span><div><h3>Frontend Developer Intern</h3><p class="organization">Rastanovin Raya</p><p>Built responsive React interfaces and REST API integrations for internal enterprise tools.</p></div></li></ol>
+      <div class="industry-work"><h3 class="eyebrow">INDUSTRY WORK / SELECTED SYSTEMS</h3><p>Selected work at Rastanovin Raya, described in my CV. Public source code is not linked for these company projects.</p><div class="industry-grid"><article><h4>Cloud development &amp; AI coding</h4><p>Context-aware code generation, autocomplete, and review integrated with full-stack development and CI/CD workflows.</p><span class="tech-line" dir="ltr">Python / JavaScript / LLMs / Docker</span></article>
+<article><h4>Retrieval-augmented generation</h4><p>A document-indexing and domain-specific Q&amp;A system with 10,000+ documents, packaged for cloud deployment.</p><span class="tech-line" dir="ltr">Python / LangChain / React</span></article>
+<article><h4>Document vision</h4><p>Exam-paper question segmentation and blank-answer detection for education document processing.</p><span class="tech-line" dir="ltr">Python / OpenCV</span></article></div></div>
+    </section>
+    <section class="about-wrap" id="about" aria-labelledby="about-title"><div class="section container about-grid">
+      <div class="about-copy"><p class="eyebrow">04 / ABOUT</p><h2 id="about-title">Curiosity, backed by implementation.</h2><p>I graduated from Amirkabir University of Technology in July 2026, ranked first in a class of 72. My work spans AI research, full-stack applications, and simulation. I like understanding the model, building the surrounding system, and making the evidence easy to inspect.</p><p class="language-note">Persian · native / English · fluent</p><div class="education"><span class="eyebrow">EDUCATION</span><h3>B.Sc. in Computer Science</h3><p>Amirkabir University of Technology</p><p class="muted">Sep 2022 – Jul 2026 · Tehran, Iran</p></div></div>
+      <div class="toolkit"><h3 class="eyebrow">MY TOOLKIT</h3><div class="skill-row"><h4>Languages</h4><ul class="tags"><li dir="ltr">Python</li><li dir="ltr">C/C++</li><li dir="ltr">JavaScript</li><li dir="ltr">TypeScript</li><li dir="ltr">SQL</li><li dir="ltr">R</li></ul></div>
+<div class="skill-row"><h4>AI &amp; data</h4><ul class="tags"><li dir="ltr">PyTorch</li><li dir="ltr">TensorFlow</li><li dir="ltr">scikit-learn</li><li dir="ltr">LangChain</li><li dir="ltr">Transformers</li><li dir="ltr">OpenCV</li><li dir="ltr">LightGBM</li><li dir="ltr">pandas</li></ul></div>
+<div class="skill-row"><h4>Software &amp; delivery</h4><ul class="tags"><li dir="ltr">React</li><li dir="ltr">Node.js</li><li dir="ltr">PostgreSQL</li><li dir="ltr">Docker</li><li dir="ltr">Git</li><li dir="ltr">Linux</li><li dir="ltr">CI/CD</li><li dir="ltr">REST APIs</li></ul></div></div>
+    </div></section>
+    <section class="contact-section container" id="contact" aria-labelledby="contact-title"><p class="eyebrow">05 / CONTACT</p><div class="contact-grid"><div><h2 id="contact-title">Have a question or a project in mind?</h2><p>For research conversations, engineering work, or questions about a repository, email is the best way to reach me.</p></div><div class="contact-actions"><a class="email-address" href="mailto:Barazandehpooya@gmail.com" dir="ltr">Barazandehpooya@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-buttons"><a class="button primary" href="mailto:Barazandehpooya@gmail.com">Send an email <span aria-hidden="true">↗</span></a><button class="button secondary copy-email" type="button" data-email="Barazandehpooya@gmail.com" hidden>Copy email</button></div><p class="copy-status" role="status" aria-live="polite"></p><div class="contact-links"><a href="https://github.com/pooyabrz" class="text-link">GitHub <span aria-hidden="true">↗</span></a><a href="CV.pdf" class="text-link" download="Pooya-Barazandeh-CV.pdf">Download CV <span aria-hidden="true">↓</span></a></div></div></div></section>
+  </main>
+  <footer class="site-footer container"><div><a class="footer-name" href="#top">Pooya Barazandeh<span aria-hidden="true">.</span></a><p>Designed to stay simple. Built with HTML, CSS &amp; JavaScript.</p></div><div class="footer-meta"><span>Content reviewed: <time datetime="2026-10-21">21 Oct 2026</time></span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
 </body>
 </html>
