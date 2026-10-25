@@ -6,11 +6,12 @@ It showcases my projects, experience, and contact details, and is deployed using
 ---
 
 ## ✨ Features
-- Responsive layout for desktop and mobile 📱  
-- Smooth scrolling & reveal animations 🎬  
-- Typewriter effect in hero section ⌨️  
-- Sections: Home, About, Projects, Experience, Contact  
-- Links to GitHub repositories with live demos/screenshots  
+- Responsive, editorial layout for desktop and mobile 📱
+- Light and dark themes, with the system preference respected
+- English and Persian pages, including right-to-left layout support
+- Accessible navigation, project filters, and reduced-motion support
+- Sections for selected work, research, experience, about, and contact
+- Links to project repositories and an English CV
 
 ---
 
