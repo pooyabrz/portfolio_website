@@ -64,7 +64,7 @@
   .hero-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .hero-actions .button { padding: 10px 8px; font-size: 11px; gap: 8px; }
 }
-</style><link href="clay.css" rel="stylesheet"/><!-- Single-page update: scripts and small style additions are bundled here. Keep style.css, profile.jpg, assets/favicon.svg, fa.html, and CV.pdf at their existing relative paths. --><link href="studio.css" rel="stylesheet"/></head>
+</style><link href="clay.css" rel="stylesheet"/><!-- Single-page update: scripts and small style additions are bundled here. Keep style.css, profile.jpg, assets/favicon.svg, fa.html, and CV.pdf at their existing relative paths. --><link href="studio.css" rel="stylesheet"/><link href="mobile-natalie.css" rel="stylesheet"/></head>
 <body data-copied="Email copied" data-copy-failed="Select and copy the email address above." data-results-label="projects shown" data-theme-dark="Use dark theme" data-theme-light="Use light theme" id="top">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
@@ -82,18 +82,18 @@
 <p class="intro">I'm Pooya, an AI developer and team lead building machine-learning applications and LLM-powered tools. My research spans federated learning, knowledge tracing, and computer vision.</p><p class="hero-note">Previously a <a href="#research-norc">Research Assistant at NORC, Amirkabir</a>, working on computer vision for bridge inspection.</p>
 <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="button secondary" download="Pooya-Barazandeh-CV.pdf" href="CV.pdf">Download CV <span aria-hidden="true">↓</span><span class="sr-only"> (PDF · English)</span></a></div>
 <a class="hero-github text-link" href="https://github.com/pooyabrz"><span dir="ltr">github.com/pooyabrz</span> <span aria-hidden="true">↗</span></a>
-<span aria-hidden="true" class="hero-spark">✳</span></div>
+<span aria-hidden="true" class="hero-spark">✳</span><div aria-hidden="true" class="mobile-scroll-cue">Scroll to explore</div></div>
 <div class="hero-profile"><div aria-hidden="true" class="hero-profile-sticker">AI / ML</div>
 <figure class="portrait"><img alt="Pooya Barazandeh at the Technology Olympics" fetchpriority="high" height="640" src="profile.jpg" width="640"/><figcaption>At the Technology Olympics</figcaption><span aria-hidden="true" class="portrait-mark">PB / 01</span></figure>
 <div class="profile-caption"><strong>B.Sc. Computer Science · 2026</strong><span>Amirkabir University of Technology</span></div>
 <dl class="academic-stats"><div><dt>Class rank</dt><dd>1 / 72</dd></div><div><dt>B.Sc. GPA</dt><dd>19.55 / 20</dd></div></dl>
-</div>
+<button aria-label="Play with the portrait" class="mobile-tap-portrait" type="button">✦</button></div>
 </section>
 <div class="container focus-strip"><span class="eyebrow">AREAS I WORK IN</span><ul><li>Federated learning</li><li>LLMs &amp; retrieval</li><li>Computer vision</li><li>Scientific computing</li></ul></div>
 <section aria-labelledby="work-title" class="section container" data-section-index="01" id="projects" tabindex="-1">
 <div class="section-heading"><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Selected work in AI and simulation.</h2><p class="section-intro">Three projects combining machine learning, scientific modeling, and software engineering. Explore the wider collection below.</p></div>
 <div class="project-controls" hidden=""><div aria-label="Filter projects by area" class="filters" role="group"><button aria-pressed="true" data-filter="all" type="button">All work</button><button aria-pressed="false" data-filter="ml" type="button">AI &amp; machine learning</button><button aria-pressed="false" data-filter="simulation" type="button">Simulation &amp; systems</button><button aria-pressed="false" data-filter="software" type="button">Software &amp; games</button></div><p aria-atomic="true" aria-live="polite" class="result-count" id="project-count" role="status">3 selected projects · 7 more below</p></div>
-<div aria-label="Selected projects" class="project-grid" id="selected-projects">
+<div aria-hidden="true" class="mobile-swipe-guide"><span class="swipe-label">Swipe through projects</span><span class="swipe-index">01 / 03</span></div><div aria-label="Selected projects" class="project-grid" id="selected-projects">
 <article class="project featured poster-card poster-lime" data-category="ml" data-project="" data-selection="selected" id="project-demandcast"><div aria-hidden="true" class="project-art art-forecast"><svg aria-hidden="true" viewbox="0 0 540 300" xmlns="http://www.w3.org/2000/svg"><defs><filter id="forecastShadow"><fedropshadow dx="4" dy="10" flood-opacity=".15" stddeviation="8"></fedropshadow></filter></defs><g filter="url(#forecastShadow)" transform="rotate(-7 270 150)"><rect fill="#fffdf2" height="223" rx="21" width="366" x="88" y="36"></rect><g stroke="#d8dbc9" stroke-width="1"><path d="M118 89H422M118 127H422M118 165H422M118 203H422" stroke-dasharray="5 6"></path></g><path d="M118 201C148 188 169 193 192 160S236 175 262 137S311 152 331 115S381 136 422 91" fill="none" stroke="#1c2626" stroke-linecap="round" stroke-width="11"></path><path d="M118 220C148 206 169 205 192 186S236 188 262 169S311 172 331 151S381 151 422 126" fill="none" stroke="#fd654b" stroke-dasharray="1 14" stroke-linecap="round" stroke-width="6"></path><circle cx="422" cy="91" fill="#fa5d4c" r="13" stroke="#fffdf2" stroke-width="5"></circle></g><g transform="rotate(10 362 54)"><rect fill="#262929" height="48" rx="24" width="142" x="342" y="21"></rect><text fill="#d1fb74" font-family="Arial" font-size="16" font-weight="800" text-anchor="middle" x="413" y="52">FORECAST</text></g></svg></div>
 <div class="project-content">
 <div class="project-top"><span class="eyebrow">RETAIL FORECASTING</span><span class="project-year">2026</span></div>
@@ -343,5 +343,5 @@
   window.addEventListener('beforeprint', () => { archiveBeforePrint = archive.open; archive.open = true; });
   window.addEventListener('afterprint', () => { archive.open = archiveBeforePrint; });
 })();
-</script><script defer="True" src="studio.js"></script></body>
+</script><script defer="True" src="studio.js"></script><nav aria-label="Quick mobile navigation" class="mobile-dock"><a href="#projects"><span aria-hidden="true" class="dock-symbol">✦</span><span>Work</span></a><a href="#research"><span aria-hidden="true" class="dock-symbol">◎</span><span>Research</span></a><a href="#about"><span aria-hidden="true" class="dock-symbol">☻</span><span>About</span></a><a href="#contact"><span aria-hidden="true" class="dock-symbol">↗</span><span>Contact</span></a></nav><script defer="" src="mobile-natalie.js"></script></body>
 </html>
