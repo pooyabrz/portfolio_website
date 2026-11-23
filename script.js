@@ -12,7 +12,7 @@
   function applyTheme() {
     root.dataset.theme = currentTheme();
     themeButton.setAttribute('aria-label', currentTheme() === 'dark' ? body.dataset.themeLight : body.dataset.themeDark);
-    themeMeta.content = currentTheme() === 'dark' ? '#0e1715' : '#f4f2ea';
+    themeMeta.content = currentTheme() === 'dark' ? '#1a1929' : '#f3f0ff';
   }
   try { chosenTheme = localStorage.getItem('pb-theme'); } catch { /* Storage is optional. */ }
   if (!['dark', 'light'].includes(chosenTheme)) chosenTheme = null;
