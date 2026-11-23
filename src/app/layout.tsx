@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import "./claymorphism.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { canonical, siteUrl, asset } from "@/lib/paths";
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
  twitter:{card:"summary_large_image",title:"Pooya Barazandeh — AI Engineering & Applied Research",images:[asset("profile.jpg")]},
  icons:{icon:asset("favicon.svg")}
 };
-export const viewport:Viewport={width:"device-width",initialScale:1,themeColor:[{media:"(prefers-color-scheme: light)",color:"#F7F6F2"},{media:"(prefers-color-scheme: dark)",color:"#101114"}]};
+export const viewport:Viewport={width:"device-width",initialScale:1,themeColor:[{media:"(prefers-color-scheme: light)",color:"#EEF1F9"},{media:"(prefers-color-scheme: dark)",color:"#1A2030"}]};
 const initTheme=`(function(){try{var x=localStorage.getItem('pb-theme');var a=localStorage.getItem('pb-accent');document.documentElement.dataset.theme=(x==='light'||x==='dark')?x:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.accent=['cobalt','lavender','lime','coral','mono'].includes(a)?a:'cobalt';}catch(e){document.documentElement.dataset.theme=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.accent='cobalt';}})();`;
 export default function RootLayout({children}:{children:React.ReactNode}){
  return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html:initTheme}}/></head><body id="top"><a className="skip-link" href="#main">Skip to content</a><Header/><main id="main" tabIndex={-1}>{children}</main><Footer/>

@@ -1,8 +1,18 @@
-# POOYA — The Living Portfolio
+# POOYA — The Living Portfolio / Claymorphism Edition
 
-An art-directed, data-driven portfolio built for **Pooya Barazandeh**, following the supplied *The Living Portfolio* PRD and the supplied existing portfolio + CV.
+A claymorphism restyling of the original fully functional, art-directed, data-driven portfolio built for **Pooya Barazandeh**, following the supplied *The Living Portfolio* PRD and the supplied existing portfolio + CV.
 
 **Next.js App Router · React 19 · TypeScript · CSS design tokens · SVG artwork · static export · accessible interactions.** No backend, database, API keys, hosted image assets or paid services are required.
+
+## What changed in this edition
+
+**Only the visual design system changed.** All existing routes, personal details, projects, interactions, accessibility patterns, SEO metadata, GitHub Pages configuration, keyboard shortcuts, and the archived Persian portfolio remain as they were.
+
+The new styling lives in `src/app/claymorphism.css`, imported **after** `globals.css` from `src/app/layout.tsx`. Remove that import to return to the previous visual design. The `themeColor` meta colors in the layout were updated to match the new background palette.
+
+The updated look uses inflated pastel surfaces, beveled rounded cards, light/dark clay shadows, inset filter/search controls, molded project-art frames, and touch-friendly navigation. The pre-existing five accent presets still work. `prefers-reduced-motion` remains supported.
+
+**Visual QA:** Static page-layout previews were checked at 320, 375, and 1440 pixels in light and dark mode, with no horizontal overflow. These are layout previews, not a complete live application or Lighthouse audit. The original production build check still requires an npm install on a machine with registry access.
 
 ## Local setup
 
@@ -24,17 +34,6 @@ The complete site is exported to `out/`.
 
 **Note:** The supplied ZIP was authored in an offline environment where the npm registry was not reachable. Dependency installation and a full Next.js production build must therefore be run on your machine or in GitHub Actions; neither is represented as having passed here.
 
-## Deploy to GitHub Pages
-
-A GitHub Actions workflow is included under `.github/workflows/deploy.yml`. It defaults to the original site address:
-
-- `https://pooyabrz.github.io/portfolio_website/`
-- `NEXT_PUBLIC_BASE_PATH=/portfolio_website`
-
-Create a new repository or replace the existing portfolio source, push to `main`, and set **Settings → Pages → Build and deployment → Source = GitHub Actions**. Your workflow builds and deploys the generated `out/` directory.
-
-For a root-domain or Vercel deployment, leave `NEXT_PUBLIC_BASE_PATH` empty and set `NEXT_PUBLIC_SITE_URL` to the final public root URL. See `.env.example`.
-
 ## Contents
 
 | Path | Purpose |
@@ -48,7 +47,8 @@ For a root-domain or Vercel deployment, leave `NEXT_PUBLIC_BASE_PATH` empty and 
 | `src/components/*` | Project artwork, interactive hero, theme controls, command palette, nav |
 | `src/content/projects.ts` | **Edit project descriptions, availability, order and featured status here** |
 | `src/content/profile.ts` | **Edit profile details, timeline, toolkit, research here** |
-| `src/app/globals.css` | Responsive design, theme tokens, accent presets, motion rules |
+| `src/app/globals.css` | Original responsive structure, theme tokens, accent presets, motion rules |
+| `src/app/claymorphism.css` | **New visual-only claymorphism layer**: light/dark surfaces, shadows, buttons, panels, responsive refinements |
 | `public/CV.pdf` | Original submitted CV, unmodified |
 | `public/profile.jpg` | Original submitted portrait, unmodified |
 | `public/classic/` | Original bilingual HTML portfolio (Persian version available from header) |
