@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight, Github, Mail, Download } from "lucide-react";
+import { CopyEmail } from "@/components/CopyEmail";
+import { profile } from "@/content/profile";
+import { asset, canonical } from "@/lib/paths";
+export const metadata:Metadata={title:"Contact — Let's Work Together",description:"Get in touch with Pooya Barazandeh for AI engineering, research collaboration and thoughtful software projects.",alternates:{canonical:canonical("/contact")}};
+export default function ContactPage(){return <div className="contact-page"><div className="wrap"><p className="eyebrow"><span className="online-dot"/> {profile.availability.toUpperCase()}</p><h1>Let's make<br/><em>something</em><br/>happen<span>.</span></h1><div className="contact-page-grid"><div><p>Great collaborations start with a small conversation. Whether it’s an AI system, a research idea, or an interesting engineering challenge — my inbox is open.</p><a className="contact-email-link" href={`mailto:${profile.email}`}>{profile.email}<ArrowUpRight size={26}/></a><CopyEmail/></div><div className="contact-other"><p className="eyebrow">ELSEWHERE ON THE INTERNET</p><a href={profile.github} target="_blank" rel="noreferrer"><Github size={22}/> GITHUB <ArrowUpRight size={18}/></a><a href={asset("CV.pdf")} download="Pooya-Barazandeh-CV.pdf"><Download size={22}/> DOWNLOAD RESUME <ArrowUpRight size={18}/></a><Link href="/work"><Mail size={22}/> EXPLORE WORK <ArrowUpRight size={18}/></Link><div className="contact-location">{profile.location}</div></div></div></div></div>}
