@@ -364,3 +364,67 @@ h3 {letter-spacing:-.045em}
   .focus-strip,.project-art,.learning-note,.about-wrap,.contact-grid {print-color-adjust:exact}
   .motion-ready .reveal-item {opacity:1;transform:none}
 }
+
+/* ============================================================
+   CONTRAST REFINEMENT — accessible light/dark palette (V2.1)
+   Preserve the poster-like section colors; pair every text
+   layer with the surface actually rendered by the theme.
+   ============================================================ */
+
+/* The lime nav hover/active pill must always use dark ink. */
+.site-nav a:hover,
+.site-nav a[aria-current='location'] {
+  color: #20252b;
+}
+
+/* The contact panel is dark in both themes. Prevent the inset
+   email pill from switching to white behind its pale-lime link. */
+.contact-grid .email-address {
+  background: #30343b;
+  color: #dcf77d;
+  box-shadow: inset 2px 2px 5px #1d2026, inset -2px -2px 5px #3a3d44;
+}
+
+/* In dark mode the About canvas becomes navy. Its introduction
+   must therefore switch to light ink; the cream education and
+   toolkit cards intentionally keep their own dark typography. */
+:root[data-theme='dark'] .about-wrap {
+  color: #f5f1e8;
+}
+:root[data-theme='dark'] .about-copy > .eyebrow {
+  color: #e0f88e;
+}
+:root[data-theme='dark'] .about-copy > h2 {
+  color: #f5f1e8;
+}
+:root[data-theme='dark'] .about-copy > p:not(.eyebrow) {
+  color: #d9d7de;
+}
+
+/* The Oxford learning feature also becomes a navy card in dark
+   mode; replace the inherited light-surface ink. */
+:root[data-theme='dark'] .learning-note {
+  color: #f5f1e8;
+}
+:root[data-theme='dark'] .learning-note .eyebrow {
+  color: #e0f88e;
+}
+:root[data-theme='dark'] .learning-note h3 {
+  color: #f5f1e8;
+}
+:root[data-theme='dark'] .learning-note p {
+  color: #d9d7de;
+}
+
+/* Progressive enhancement when OS dark mode is enabled but JS
+   has not yet assigned an explicit data-theme attribute. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .about-wrap { color: #f5f1e8; }
+  :root:not([data-theme]) .about-copy > .eyebrow { color: #e0f88e; }
+  :root:not([data-theme]) .about-copy > h2 { color: #f5f1e8; }
+  :root:not([data-theme]) .about-copy > p:not(.eyebrow) { color: #d9d7de; }
+  :root:not([data-theme]) .learning-note { color: #f5f1e8; }
+  :root:not([data-theme]) .learning-note .eyebrow { color: #e0f88e; }
+  :root:not([data-theme]) .learning-note h3 { color: #f5f1e8; }
+  :root:not([data-theme]) .learning-note p { color: #d9d7de; }
+}
